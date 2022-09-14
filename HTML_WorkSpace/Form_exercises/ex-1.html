@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Special Input Types Demo</title>
+</head>
+<body>
+<div>
+    <h3><center>Customer Registration</center></h3> <br>
+    <center><form name="ex-1">
+        <div>
+            <label for="userName">User Name:</label>
+            <input 
+            type="text" 
+            name="userName"
+            autofocus
+            required
+            maxlength="15"
+            pattern="[A-Za-z]">
+        </div> <br>
+        <div>
+            <label for="password">Password:</label>
+            <input 
+            type="password" 
+            name="password"
+            required
+            pattern="[A-Za-z][0-9a-zA-Z]"
+            maxlength="12"
+            minlength="8">
+        </div> <br>
+        <div>
+            <label for="mail">Email:</label>
+            <input 
+            type="mail" 
+            name="mail">
+        </div><br>
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Others">Others
+        </div><br>
+        <div>
+            <label for="age">Age(Yrs):</label>
+            <input 
+            type="number" 
+            name="age"
+            min="12"
+            max="60">
+        </div><br>
+        <div>
+            <label for="address">Address:</label>
+            <textarea 
+            name="address" 
+            cols="30" 
+            rows="10"
+            maxlength="100"></textarea>
+        </div><br>
+        <div>
+            <label for="url">Company Website</label>
+            <input type="url" name="url">
+        </div><br>
+        <div>
+            <label for="country">Choose Country:</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="Germany">Germany</option>
+                <option value="Japan">Japan</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="date">Date of Journey</label>
+            <input type="date" name="date">
+        </div><br>
+        <div>
+            <button type="submit">Submit</button> &nbsp;
+            <button type="reset">Reset</button>
+        </div>
+    </form></center>
+</div>
+</center>
+</body>
+</html>
