@@ -13,8 +13,7 @@
             name="userName"
             autofocus
             required
-            maxlength="15"
-            pattern="[A-Za-z]">
+            pattern="^[A-Za-z]{4,15}$">
         </div> <br>
         <div>
             <label for="password">Password:</label>
@@ -22,9 +21,10 @@
             type="password" 
             name="password"
             required
-            pattern="[A-Za-z][0-9a-zA-Z]"
+            pattern=""
             maxlength="12"
-            minlength="8">
+            minlength="8"
+            pattern="^\d[A-z\d]{6,10}\d$">
         </div> <br>
         <div>
             <label for="mail">Email:</label>

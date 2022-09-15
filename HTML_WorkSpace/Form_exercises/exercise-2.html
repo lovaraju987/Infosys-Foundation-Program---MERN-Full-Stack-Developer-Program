@@ -8,13 +8,13 @@
            
         </p>
         <br> <center>
-        <form method="post" name="DLregForm">
+        <form name="DLregForm">
               <div>
                 <label for="applicantName">Applicant's Name:</label>
                 <input 
                 type="text" 
                 name="applicantName"
-                pattern="[A-Za-z]"
+                pattern="^[A-Za-z]{4,}$"
                 required>
               </div><br>
               <div>
@@ -23,7 +23,7 @@
                 type="number" 
                 name="age"
                 required
-                pattern="\d">
+                pattern="\d{1,2}$">
               </div><br>
               <div>
                 <label for="address">Address:</label>
@@ -41,7 +41,8 @@
                 name="number" 
                 pattern="\d"
                 minlength="10"
-                maxlength="10">
+                maxlength="10"
+                pattern="^[6-9]\d{9}$">
               </div><br>
               <div>
                 <input type="checkbox" name="checkbox">
