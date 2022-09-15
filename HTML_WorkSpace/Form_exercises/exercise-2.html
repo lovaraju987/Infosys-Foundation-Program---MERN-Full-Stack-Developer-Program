@@ -4,17 +4,52 @@
         <title>Input Elements</title>
     </head>
     <body>
-        <p>
-           Application for Drivers licence
+        <p><center>Application for Drivers licence</center>
+           
         </p>
-        <br>
-        <form method="post">
-              Name:
-                <input type="text" required="required" pattern="[A-Za-z]">
-                <br/>
-                <br/>
-                I own an expired driver'                                                s license.<br>
-                <input type="submit">
-        </form>
+        <br> <center>
+        <form method="post" name="DLregForm">
+              <div>
+                <label for="applicantName">Applicant's Name:</label>
+                <input 
+                type="text" 
+                name="applicantName"
+                pattern="[A-Za-z]"
+                required>
+              </div><br>
+              <div>
+                <label for="age">Age:</label>
+                <input 
+                type="number" 
+                name="age"
+                required
+                pattern="\d">
+              </div><br>
+              <div>
+                <label for="address">Address:</label>
+                <textarea 
+                name="address"
+                cols="30" 
+                rows="10"
+                maxlength="30"
+                required></textarea>
+              </div><br>
+              <div>
+                <label for="number">Contant No:</label>
+                <input 
+                type="number" 
+                name="number" 
+                pattern="\d"
+                minlength="10"
+                maxlength="10">
+              </div><br>
+              <div>
+                <input type="checkbox" name="checkbox">
+                <label for="checkbox">I own an expired driver's licence.</label>
+              </div><br>
+              <div>
+                <button type="submit">submit</button>
+              </div>
+        </form></center>
     </body>
 </html>
