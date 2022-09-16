@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+</head>
+<body>
+    <center>
+        <form action="">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="2">XYZ Online Delivery</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Personal Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="firstName">FirstName*</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="text" 
+                            name="firstName"
+                            maxlength="20"
+                            required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phNo">Phone Number*</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="number" 
+                            name="phNo" 
+                            required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Order Preferences</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="size">Size*</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="size" value="Small" required>Small
+                            <input type="radio" name="size" value="Medium" checked>Medium
+                            <input type="radio" name="size" value="Large">Large
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="base">Base*</label>
+                        </td>
+                        <td>
+                            <select name="base" required>
+                                <option value="Pan Pizza">Pan Pizza</option>
+                                <option value="Cheese Crust">Cheese Crust</option>
+                                <option value="Chicken Stuffed Crust" selected>Chicken Stuffed Crust</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="toppings">Toppings</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="toppings" value="Cheese">Cheese
+                            <input type="checkbox" name="toppings" value="Olives">Olives
+                            <input type="checkbox" name="toppings" value="Tomatoes">Tomatoes
+                            <input type="checkbox" name="toppings" value="Capsicum">Capsicum
+                            <input type="checkbox" name="toppings" value="Jalapenos">Jalapenos <br>
+                            <input type="checkbox" name="toppings" value="Mushrooms">Mushrooms
+                            <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni
+                            <input type="checkbox" name="toppings" value="Onion">Onion
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="additional">Additional Details</label>
+                        </td>
+                        <td>
+                            <textarea name="additional" id="" cols="30" rows="2"></textarea>
+                        </td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <th align="center" colspan="2">
+                                <label for="agree">Confirm details and proceed to pay?</label>
+                                <input type="radio" name="agree" id="" value="Yes">Yes
+                                <input type="radio" name="agree" id="" value="No">No
+                            </th>
+                        </tr>
+                        <tr>
+                            <th align="center" colspan="2">
+                                    <button type="Submit">Submit</button>
+                                
+                            </th>
+                        </tr>
+                    </tfoot>
+            </table>
+        </form>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form action="">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="3" align="center">XYZ University Student Registration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="4">Personal Details</th>
+                        <td>
+                            <label for="firstName">First Name*</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="text" 
+                            name="firstName" 
+                            maxlength="10"
+                            required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lastName">Last Name*</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="text" 
+                            name="lastName" 
+                            maxlength="10"
+                            required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="birth">Date of Birth*</label>
+                        </td>
+                        <td>
+                            <input type="date" name="birth" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" id="" value="Male">Male
+                            <input type="radio" name="gender" id="" value="Female">Female
+                            <input type="radio" name="gender" id="" value="Others">Others
+                        </td>
+                    </tr>
+                    <tr>
+                        <th rowspan="4">Academic Details</th>
+                        <td>
+                            <label for="degree">Degree</label>
+                        </td>
+                        <td>
+                            <select name="degree" id="">
+                                <option value="Bachelors">Bachelors</option>
+                                <option value="Masters" selected>Masters</option>
+                                <option value="Doctorate">Doctorate</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="specialization">Specialization*</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="text" 
+                            name="specialization" 
+                            maxlength="40" 
+                            required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="instMode">Mode of Instruction</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="instMode" value="Classroom" checked>Classroom
+                            <input type="checkbox" name="instMode" value="Online">Online
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gpa">Current GPA*</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="number" 
+                            name="gpa" 
+                            max="5" 
+                            required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th rowspan="4">Contact Details</th>
+                        <td>
+                            <label for="phNo">Phone Number*</label>
+                        </td>
+                        <td>
+                            <input type="number" name="phNo" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">
+                            <label for="address">Address*</label>
+                        </td>
+                        <td rowspan="3">
+                            <textarea 
+                            name="address" 
+                            rows="4" 
+                            maxlength="40"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <label for="agree">I assure all the details entered are correct:</label>
+                            <input type="checkbox" name="agree">Yes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
