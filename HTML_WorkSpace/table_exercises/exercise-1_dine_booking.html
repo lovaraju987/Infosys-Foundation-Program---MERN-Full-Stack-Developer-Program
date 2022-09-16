@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a slot for Dining</title>
+</head>
+<body>
+    <center><form>
+        <table>
+            <caption>Book a slot for Dining</caption>
+            <tr>
+                <tr>
+                    <td colspan="2"><pre></pre></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><pre></pre></td>
+                </tr>
+            </tr>
+            <tr>
+                <td><label for="visitorName">Visitor Name:</label></td>
+                <td><input 
+                type="text" 
+                name="visitorName"
+                maxlength="20"
+                autofocus>
+            </tr>
+            <tr>
+                <td><label for="count">Number of Members:</label></td>
+                <td><input 
+                type="number" 
+                name="count"
+                maxlength="2">
+            </tr>
+            <tr>
+                <td><label for="contactNo">Contact No:</label></td>
+                <td><input 
+                type="number" 
+                name="contactNo">
+            </tr>
+            <tr>
+                <td><label for="mail">Email:</label></td>
+                <td><input type="mail" name="mail"></td>
+            </tr>
+            <tr>
+                <td><label for="foodType">Type of Food:</label></td>
+                <td><input type="checkbox" name="foodType" value="South Indian" checked>South Indian</td>
+                <td><input type="checkbox" name="foodType" value="North Indian" required>North Indian</td>
+                <td><input type="checkbox" name="foodType" value="Chinese">Chinese</td>
+                <td><input type="checkbox" name="foodType" value="Western">Western</td>
+            </tr>
+            <tr>
+                <td><label for="roomStatus">Room Status</label></td>
+                <td><input type="radio" name="roomStatus" value="AC" checked>AC</td>
+                <td><input type="radio" name="roomStatus" value="Non-AC" required>Non-AC</td>
+            </tr>
+            <tr>
+                <td><label for="venue">Venue Preference</label></td>
+                <td><select name="venue" id="venue">
+                    <option disabled selected>--SELECT--</option>
+                    <option value="Arena">Arena</option>
+                    <option value="Fiesta">Fiesta</option>
+                    <option value="Vista">Vista</option>
+                    <option value="Mythri">Mythri</option>
+                    <option value="Magna">Magna</option>
+                    <option value="Oasis">Oasis</option>
+                    <option value="Amoeba" disabled>Amoeba</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Book</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+        </table>
+    </form></center>
+</body>
+</html>
