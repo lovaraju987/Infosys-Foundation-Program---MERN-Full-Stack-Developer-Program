@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Combinator</title>
+    <!-- <style>
+        #firstDiv .p1{
+           font-style: italic;
+           background-color: orange;
+        }
+
+    </style> -->
+    <link rel="stylesheet" href="descendant_combinator.css">
+</head>
+<body>
+    <div id=”firstDiv”>
+        <p class=”p1”>This p tag is inside div tag</p> <!—Selected ->
+        <span>
+            <p>This is p inside span which is inside div</p><!- Selected ->
+        </span>
+    </div>
+    <p class=”p1”>This p tag is next to div tag</p><!—Not selected ->
+    
+</body>
+</html>

@@ -1,0 +1,6 @@
+h4 + p {
+    background-color: gray;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+}
