@@ -1,0 +1,8 @@
+html{
+    background-image: linear-gradient(to right, pink, lighgreen);
+}
+
+.percentUnit{
+    border: 2px solid brown;
+    width: 50%;
+}
